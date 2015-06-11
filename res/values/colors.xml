@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 此种定义更方便 -->
+    <color name="color_adadad">#adadad</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_eaeaea">#eaeaea</color>
+    <color name="color_fcc95d">#fcc95d</color>
+    <color name="color_fbb217">#fbb217</color>
+    <color name="color_3474ba">#ff3474ba</color>
+    <color name="color_9b9b9b">#9b9b9b</color>
+    <color name="color_9bcd5f">#9bcd5f</color>
+    <color name="color_bde390">#bde390</color>
+    <color name="color_2963a3">#2963a3</color>
+    <color name="color_7d7d7d">#7d7d7d</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_b3b3b3">#b3b3b3</color>
+    <color name="color_e5e5e5">#e5e5e5</color>
+    <color name="color_555555">#555555</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_dddddd">#dddddd</color>
+    <color name="color_d7d7d7">#d7d7d7</color>
+    <color name="color_e8e8e8">#e8e8e8</color>
+    <color name="color_e8eaef">#e8eaef</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="color_4fc0e8">#4fc0e8</color>
+    <color name="color_3ba1c5">#3ba1c5</color>
+    <color name="color_00ffffff">#00ffffff</color>
+    <color name="color_ffffffff">#ffffffff</color>
+    <color name="color_fb6e52">#fb6e52</color>
+    <color name="color_e35d42">#e35d42</color>
+    <color name="color_454545">#454545</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_b2b2b2">#b2b2b2</color>
+    <color name="white">#ffffff</color>
+
+</resources>

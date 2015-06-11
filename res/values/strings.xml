@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">猴哥</string>
+    <string name="forgot_password">忘记密码？</string>
+    <string name="login">登录</string>
+    <string name="please_input_telephone">请输入您的手机号</string>
+    <string name="please_input_password">请输入您的密码</string>
+    <string name="no_net_connected">无网络连接，请检查网络配置</string>
+
+</resources>

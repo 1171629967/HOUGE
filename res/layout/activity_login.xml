@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 用来存放actionbar的容器布局 -->
+    <RelativeLayout
+        android:id="@+id/rl_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.ysp.houge.view.EditChooseView
+        android:id="@+id/mTelephoneView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="30dip" />
+
+    <com.ysp.houge.view.EditChooseView
+        android:id="@+id/mPasswordView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip" />
+
+    <TextView
+        android:id="@+id/mForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip"
+        android:text="@string/forgot_password"
+        android:textColor="@color/color_adadad"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/mLoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:padding="10dip"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>
