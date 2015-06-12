@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" >
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/tabContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_tab_bar_bg"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/tabRecommend"
+                style="@style/HomeTabButton"
+                android:drawableTop="@drawable/selector_ic_tab_recommend"
+                android:text="推荐" />
+
+            <RadioButton
+                android:id="@+id/tabNearby"
+                style="@style/HomeTabButton"
+                android:drawableTop="@drawable/selector_ic_tab_nearby"
+                android:text="附近" />
+
+            <RadioButton
+                android:id="@+id/tabMessage"
+                style="@style/HomeTabButton"
+                android:drawableTop="@drawable/selector_ic_tab_message"
+                android:text="消息" />
+
+            <RadioButton
+                android:id="@+id/tabMe"
+                style="@style/HomeTabButton"
+                android:drawableTop="@drawable/selector_ic_tab_me"
+                android:text="我" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- <ImageView
+        android:id="@+id/primary_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_primary_guide" /> -->
+
+</FrameLayout>

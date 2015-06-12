@@ -3,6 +3,7 @@ package com.ysp.houge.view;
 import java.io.IOException;
 
 import android.graphics.drawable.Drawable;
+import android.os.Bundle;
 import android.os.Handler;
 import android.widget.LinearLayout;
 
@@ -20,7 +21,7 @@ public class SplashActivity extends BaseFragmentActivity {
 	}
 
 	@Override
-	protected void initializeViews() {
+	protected void initializeViews(Bundle savedInstanceState) {
 		mRootLayout = (LinearLayout) findViewById(R.id.mRootLayout);
 	}
 

@@ -57,7 +57,7 @@ public abstract class BaseFragmentActivity extends FragmentActivity {
 		initializeState(savedInstanceState);
 		setContentView();
 		initActionbar();
-		initializeViews();
+		initializeViews(savedInstanceState);
 		initializeData();
 		initTopTitle();
 	}
@@ -91,7 +91,7 @@ public abstract class BaseFragmentActivity extends FragmentActivity {
 
 	protected abstract void setContentView();
 
-	protected abstract void initializeViews();
+	protected abstract void initializeViews(Bundle savedInstanceState);
 
 	protected abstract void initializeData();
 	

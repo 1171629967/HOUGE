@@ -96,7 +96,7 @@ public class LoginActivity extends BaseFragmentActivity implements
 	}
 	
 	@Override
-	protected void initializeViews() {
+	protected void initializeViews(Bundle savedInstanceState) {
 		mTelephoneView = (EditChooseView) findViewById(R.id.mTelephoneView);
 		mPasswordView = (EditChooseView) findViewById(R.id.mPasswordView);
 		mLoginBtn = (Button) findViewById(R.id.mLoginBtn);
