@@ -35,4 +35,10 @@ public class RecommendFragment extends BaseFragment{
 		return R.layout.fragment_recommend;
 	}
 
+	@Override
+	protected void initializeViews(View view, Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

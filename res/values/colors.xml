@@ -33,12 +33,15 @@
     <color name="color_454545">#454545</color>
     <color name="color_f2f2f2">#f2f2f2</color>
     <color name="color_b2b2b2">#b2b2b2</color>
+    <color name="color_013F64">#013F64</color>    
+    <color name="color_FFCB1D">#FFCB1D</color>
     <color name="white">#ffffff</color>
     
     
     
     <!-- ############## wanglx start ############## -->
     <color name="color_actionbar_bg">#46B39E</color>
+    <color name="color_app_theme_bg">#F7F7F7</color>
     <!-- ############## wanglx end ##############-->
     
 

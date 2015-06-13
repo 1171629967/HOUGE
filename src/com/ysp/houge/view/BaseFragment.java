@@ -23,6 +23,7 @@ public abstract class BaseFragment extends Fragment{
 	{
 		super.onViewCreated(view, savedInstanceState);
 		initActionbar(view);
+		initializeViews(view, savedInstanceState);
 //		getMyFirstPageInfo();
 //		
 //		imageLoader = ImageLoader.getInstance(getActivity());
@@ -33,6 +34,7 @@ public abstract class BaseFragment extends Fragment{
 	
 	
 	protected abstract void initActionbar(View view);
+	protected abstract void initializeViews(View view, Bundle savedInstanceState);
 	protected abstract int getContentView();
 
 }

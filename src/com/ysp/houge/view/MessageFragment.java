@@ -41,4 +41,10 @@ public class MessageFragment extends BaseFragment{
 		return R.layout.fragment_message;
 	}
 
+	@Override
+	protected void initializeViews(View view, Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
