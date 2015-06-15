@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 用来存放actionbar的容器布局 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="30dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/mView" >
+
+            <TextView
+                android:id="@+id/mLeftLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="手机号码"
+                android:singleLine="true"
+                android:textColor="@color/color_adadad"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/mMobileEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toLeftOf="@+id/mClearBtn"
+                android:layout_toRightOf="@+id/mLeftLabel"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="注册时的手机号"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/mResendBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_light_orange"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="重新发送"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/mView"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_adadad" />
+    </RelativeLayout>
+
+    <com.ysp.houge.widget.EditChooseView
+        android:id="@+id/mCheckCodeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip" />
+
+    <Button
+        android:id="@+id/mFinishBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/btn_actionbar_color"
+        android:padding="10dip"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

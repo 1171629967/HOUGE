@@ -22,11 +22,52 @@ package com.ysp.houge.entity;
  * @version 1.0
  */
 public class EditChooseViewDescriptor {
-
-	public String hintText;
+	private String leftText;
+	private String hintText;
 
 	public EditChooseViewDescriptor(String hintText) {
 		super();
+		this.hintText = hintText;
+	}
+
+	/**
+	 * @描述
+	 * @param leftText
+	 * @param hintText
+	 */
+	public EditChooseViewDescriptor(String hintText, String leftText) {
+		super();
+		this.leftText = leftText;
+		this.hintText = hintText;
+	}
+
+	/**
+	 * @return the leftText
+	 */
+	public String getLeftText() {
+		return leftText;
+	}
+
+	/**
+	 * @param leftText
+	 *            the leftText to set
+	 */
+	public void setLeftText(String leftText) {
+		this.leftText = leftText;
+	}
+
+	/**
+	 * @return the hintText
+	 */
+	public String getHintText() {
+		return hintText;
+	}
+
+	/**
+	 * @param hintText
+	 *            the hintText to set
+	 */
+	public void setHintText(String hintText) {
 		this.hintText = hintText;
 	}
 

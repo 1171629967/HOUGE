@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mItemLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_border_actionbar_bg_write"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <ImageView
+        android:id="@+id/mItemIcon"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/choosed_icon" />
+
+    <TextView
+        android:id="@+id/mItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dip"
+        android:text="认证失败"
+        android:textColor="@color/color_actionbar_bg"
+        android:textSize="16sp" />
+
+</RelativeLayout>

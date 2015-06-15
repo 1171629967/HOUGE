@@ -2,32 +2,59 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/mClearEditLayout"
     android:layout_width="match_parent"
-    android:layout_height="45dip"
-    android:background="@drawable/edit_bg_normal" >
+    android:layout_height="45dip" >
 
-    <EditText
-        android:id="@+id/mClearEditText"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="5dip"
-        android:layout_toLeftOf="@+id/mClearImg"
-        android:background="@null"
-        android:gravity="center_vertical"
-        android:hint="hint"
-        android:singleLine="true"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        android:layout_above="@+id/mView" >
 
-    <ImageView
-        android:id="@+id/mClearImg"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
-        android:paddingLeft="10dip"
-        android:paddingRight="10dip"
-        android:scaleType="centerInside"
-        android:src="@drawable/clear"
-        android:visibility="invisible" />
+        <TextView
+            android:id="@+id/mLeftLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="ss"
+            android:singleLine="true"
+            android:textColor="@color/color_adadad"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/mClearEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toLeftOf="@+id/mClearImg"
+            android:layout_toRightOf="@+id/mLeftLabel"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="hint"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/mClearImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/clear"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/mView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_adadad" />
 
 </RelativeLayout>

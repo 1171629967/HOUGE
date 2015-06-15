@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 用来存放actionbar的容器布局 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/mNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="您的姓名"
+                android:textColor="@color/color_cbcbcb"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/mNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_toLeftOf="@+id/mAvatar"
+                android:layout_toRightOf="@+id/mNameLabel"
+                android:background="@null"
+                android:hint="有了称呼，便于交友"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:textColor="@color/color_cbcbcb"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/mAvatar"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/avatar" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_cbcbcb" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/mMobileLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="手机号码"
+                android:textColor="@color/color_cbcbcb"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/mMobileEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/mMobileLabel"
+                android:background="@null"
+                android:hint="便于企业联系你"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:textColor="@color/color_cbcbcb"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_cbcbcb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="手机号码"
+                android:textColor="@color/color_cbcbcb"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:text="真实的手机号，便于企业联系到您"
+                android:textColor="@color/color_fbb217"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/mPasswordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="设置密码"
+                android:textColor="@color/color_cbcbcb"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/mPasswordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/mPasswordLabel"
+                android:background="@null"
+                android:hint="@string/password_hint"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:textColor="@color/color_cbcbcb"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_cbcbcb" />
+
+        <Button
+            android:id="@+id/mFinishBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/btn_actionbar_color"
+            android:padding="10dip"
+            android:text="@string/finish"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

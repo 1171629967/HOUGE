@@ -3,13 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+
     <!-- 用来存放actionbar的容器布局 -->
+
     <RelativeLayout
         android:id="@+id/rl_actionbar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
-    <com.ysp.houge.view.EditChooseView
+    <com.ysp.houge.widget.EditChooseView
         android:id="@+id/mTelephoneView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +19,7 @@
         android:layout_marginRight="15dip"
         android:layout_marginTop="30dip" />
 
-    <com.ysp.houge.view.EditChooseView
+    <com.ysp.houge.widget.EditChooseView
         android:id="@+id/mPasswordView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,6 +47,7 @@
         android:layout_marginLeft="15dip"
         android:layout_marginRight="15dip"
         android:layout_marginTop="15dip"
+        android:background="@drawable/btn_actionbar_color"
         android:padding="10dip"
         android:text="@string/login"
         android:textColor="@color/white"

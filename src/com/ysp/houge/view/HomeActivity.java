@@ -1,21 +1,10 @@
 package com.ysp.houge.view;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import org.apache.http.client.ClientProtocolException;
-import org.json.JSONException;
-
-import com.ysp.houge.R;
-import com.ysp.houge.utility.Toaster;
-
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -25,13 +14,14 @@ import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 
+import com.ysp.houge.R;
+import com.ysp.houge.utility.Toaster;
 
 
 public class HomeActivity extends BaseFragmentActivity {

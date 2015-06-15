@@ -10,7 +10,7 @@
 /**
  * 
  */
-package com.ysp.houge.view;
+package com.ysp.houge.widget;
 
 import android.content.Context;
 import android.text.Editable;
@@ -23,6 +23,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.ysp.houge.R;
 import com.ysp.houge.entity.EditChooseViewDescriptor;
@@ -46,6 +47,7 @@ public class EditChooseView extends RelativeLayout implements
 	private EditChooseViewDescriptor descriptor;
 	private OnTextChangedListener onTextChangedListener;
 	private Context context;
+	private TextView mLeftLabel;
 
 	public OnTextChangedListener getOnTextChangedListener() {
 		return onTextChangedListener;
@@ -80,6 +82,7 @@ public class EditChooseView extends RelativeLayout implements
 				this);
 		mClearImg = (ImageView) findViewById(R.id.mClearImg);
 		mClearEditText = (EditText) findViewById(R.id.mClearEditText);
+		mLeftLabel = (TextView) findViewById(R.id.mLeftLabel);
 		mClearImg.setOnClickListener(this);
 		mClearEditText.addTextChangedListener(this);
 	}
@@ -93,10 +96,16 @@ public class EditChooseView extends RelativeLayout implements
 			setVisibility(View.GONE);
 			return false;
 		}
-		if (!TextUtils.isEmpty(descriptor.hintText)) {
-			mClearEditText.setHint(descriptor.hintText);
+		if (!TextUtils.isEmpty(descriptor.getHintText())) {
+			mClearEditText.setHint(descriptor.getHintText());
 		} else {
 			mClearEditText.setHint("");
+		}
+		if (!TextUtils.isEmpty(descriptor.getLeftText())) {
+			mLeftLabel.setHint(descriptor.getLeftText());
+			mLeftLabel.setVisibility(View.VISIBLE);
+		} else {
+			mLeftLabel.setVisibility(View.GONE);
 		}
 		return true;
 	}

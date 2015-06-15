@@ -12,6 +12,7 @@
     <color name="color_9bcd5f">#9bcd5f</color>
     <color name="color_bde390">#bde390</color>
     <color name="color_2963a3">#2963a3</color>
+    <color name="color_cbcbcb">#cbcbcb</color>
     <color name="color_7d7d7d">#7d7d7d</color>
     <color name="color_333333">#333333</color>
     <color name="color_b3b3b3">#b3b3b3</color>
@@ -33,16 +34,18 @@
     <color name="color_454545">#454545</color>
     <color name="color_f2f2f2">#f2f2f2</color>
     <color name="color_b2b2b2">#b2b2b2</color>
-    <color name="color_013F64">#013F64</color>    
+    <color name="color_013F64">#013F64</color>
     <color name="color_FFCB1D">#FFCB1D</color>
     <color name="white">#ffffff</color>
-    
-    
-    
+    <color name="transparent">#00000000</color>
+    <color name="gray_color">#e5e5e5</color>
+    <color name="album_list_feeditem_sel">#fff1f1f1</color>
+    <color name="album_list_feeditem_nor">#fffafafa</color>
+    <color name="none_color">#00000000</color>
+    <color name="bule_overlay">#660D92DD</color>
     <!-- ############## wanglx start ############## -->
     <color name="color_actionbar_bg">#46B39E</color>
     <color name="color_app_theme_bg">#F7F7F7</color>
-    <!-- ############## wanglx end ##############-->
-    
+    <!-- ############## wanglx end ############## -->
 
 </resources>

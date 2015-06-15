@@ -59,7 +59,6 @@ public abstract class BaseFragmentActivity extends FragmentActivity {
 		initActionbar();
 		initializeViews(savedInstanceState);
 		initializeData();
-		initTopTitle();
 	}
 
 	@Override
@@ -94,11 +93,8 @@ public abstract class BaseFragmentActivity extends FragmentActivity {
 	protected abstract void initializeViews(Bundle savedInstanceState);
 
 	protected abstract void initializeData();
-	
-	protected abstract void initActionbar();
 
-	public void initTopTitle() {
-	};
+	protected abstract void initActionbar();
 
 	@Override
 	protected void onResume() {
