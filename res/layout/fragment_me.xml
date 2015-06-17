@@ -57,18 +57,20 @@
 
                     <ImageView
                         android:id="@+id/iv_sex"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="3dp"
+                        android:background="@drawable/sex_icon_male"
                         android:layout_toRightOf="@+id/tv_name" />
 
                     <ImageView
                         android:id="@+id/iv_authentication"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="3dp"
+                        android:background="@drawable/authentication"
                         android:layout_toRightOf="@+id/iv_sex" />
 
                     <Button
@@ -93,14 +95,14 @@
                         android:layout_centerVertical="true"
                         android:text="4.5"
                         android:textColor="@color/color_FFCB1D"
-                        android:textSize="25sp" />
+                        android:textSize="30sp" />
 
                     <com.ysp.houge.widget.ColoredRatingBar
                         android:id="@+id/coloredRatingBar"
                         style="@style/coloredRatingBarStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
+                        android:layout_marginLeft="5dp"
                         android:layout_toRightOf="@+id/tv_core"
                         android:layout_centerVertical="true"
                         rb:rating="3" />
